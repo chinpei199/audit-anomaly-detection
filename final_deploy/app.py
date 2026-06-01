@@ -321,9 +321,9 @@ def render_sidebar():
 @st.cache_resource
 def load_models():
     try:
-        model    = joblib.load("isolation_forest_model.pkl")
-        features = joblib.load("features.pkl")
-        scaler   = joblib.load("scaler.pkl")
+        model = joblib.load(os.path.join(BASE_DIR, "isolation_forest_model.pkl"))
+        features = joblib.load(os.path.join(BASE_DIR, "features.pkl"))
+        scaler = joblib.load(os.path.join(BASE_DIR, "scaler.pkl"))
         return model, features, scaler
     except Exception:
         return None, None, None
