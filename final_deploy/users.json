@@ -1,0 +1,30 @@
+{
+  "user_001": {
+    "name": "Lim Chin Pei",
+    "email": "chinpei@audit.com",
+    "password": "audit123",
+    "role": "Senior Auditor",
+    "department": "Internal Audit",
+    "employee_id": "24077115",
+    "permissions": [
+      "prediction",
+      "analysis",
+      "profile"
+    ],
+    "last_login": "2026-06-01 23:48:20"
+  },
+  "user_002": {
+    "name": "Siti Rahayu",
+    "email": "siti@audit.com",
+    "password": "password123",
+    "role": "Audit Manager",
+    "department": "Compliance",
+    "employee_id": "EMP-002",
+    "permissions": [
+      "prediction",
+      "analysis",
+      "profile"
+    ],
+    "last_login": ""
+  }
+}
