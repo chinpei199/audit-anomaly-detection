@@ -508,6 +508,14 @@ def prediction_page():
                             st.caption(f"Previously uploaded: {doc_name}")
                             if doc_path and os.path.exists(doc_path):
                                 st.caption(f"Saved at: {doc_path}")
+                                with open(doc_path, "rb") as f:
+                                    st.download_button(
+                                        label="Download Document",
+                                        data=f.read(),
+                                        file_name=doc_name,
+                                        mime="application/octet-stream",
+                                        key=f"dl_{idx}"
+                                    )
 
                     with col_b:
                         action_choice = st.selectbox(
