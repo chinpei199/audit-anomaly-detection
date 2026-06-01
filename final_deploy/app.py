@@ -21,7 +21,7 @@ st.set_page_config(
 BASE_DIR = os.path.dirname(__file__)
 USERS_FILE = os.path.join(BASE_DIR, "users.json")
 AUDIT_ACTIONS_FILE = "audit_actions.json"
-EVIDENCE_DIR = "evidence"
+EVIDENCE_DIR = os.path.join(BASE_DIR, "evidence")
 
 # ─── Utility ─────────────────────────────────────────────────────────────────
 
