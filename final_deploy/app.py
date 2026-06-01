@@ -18,7 +18,8 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-USERS_FILE = "users.json"
+BASE_DIR = os.path.dirname(__file__)
+USERS_FILE = os.path.join(BASE_DIR, "users.json")
 AUDIT_ACTIONS_FILE = "audit_actions.json"
 EVIDENCE_DIR = "evidence"
 
