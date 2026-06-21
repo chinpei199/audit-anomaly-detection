@@ -485,7 +485,7 @@ def prediction_page():
 
                 status_symbol = "[Open]" if status == "open" else "[Closed]"
                 with st.expander(
-                    f"Anomaly #{i+1}  {status_symbol}  —  Score: {row['_anomaly_score']:.4f}",
+                    f"Anomaly #{i+1}  {status_symbol} ",
                     expanded=False
                 ):
                     st.markdown(
